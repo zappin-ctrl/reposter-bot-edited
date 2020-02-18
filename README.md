@@ -1,9 +1,26 @@
 # Discord Reposter
-A simple bot I made because I wanted my friends to stop deleting their messages.
+Based on Reposter Bot by https://github.com/MysteryPancake
+Does the same stuff - except it only posts images for logging purposes.
 
-It reposts all the messages from one channel to another, which can even be in another server!
+## Make a Discord bot [here](https://discordapp.com/developers/applications/)
+## Copy the token and paste it in Line 9 in `reposter.js` instead of `process.env.token`
+## As for the setup, follow what this guy says at the bottom and install any missing dependencies.
+## I used the Windows 10 Linux Kernel (bash). 
+## Enable it by following [this guide](https://www.howtogeek.com/424886/windows-10s-linux-kernel-is-now-available/)
+## Or download Ubuntu from the Windows 10 Store.
+*Also highly suggested is using [GIT Bash](https://git-scm.com/downloads) for all your CMD needs*
 
-However, the bot needs to be in both servers for this to work.
+
+Also fixed to work with custom statuses by changing:
+
+`client.user.setActivity()` in Line 12 and Line 41 of `reposter.js`
+(replace the part in "" with whatever should be after "Watching" on the status. You can also turn it to "Playing".)
+
+I suggest uploading it to Heroku by following their instructions on deploying.
+[This video](https://www.youtube.com/watch?v=d8INsGl28xw) is also a good tutorial.
+## I recommend running all commands with `sudo` and never using Git
+
+
 
 ## Commands
 ### Repost To
